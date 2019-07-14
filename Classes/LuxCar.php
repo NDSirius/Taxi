@@ -2,18 +2,16 @@
 
 class LuxCar extends TypeCar
 {
-    public $car = 'Audi A7';
-    public $price = '1.80$ per 1km';
     public function choose_type()
     {
         return 'Lux';
     }
-    public function getCar()
+    public function carModel()
     {
-        return $this->car;
+        return 'lux car';
     }
-    public function getPrice()
+    public function price()
     {
-        return $this->price;
+        return 'lux price';
     }
 }

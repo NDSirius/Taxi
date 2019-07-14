@@ -2,18 +2,16 @@
 
 class StandartCar extends TypeCar
 {
-    public $car = 'Skoda Octavia';
-    public $price = '0.98$ per 1km';
     public function choose_type()
     {
         return 'Standart';
     }
-    public function getCar()
+    public function carModel()
     {
-        return $this->car;
+        return 'standart car';
     }
-    public function getPrice()
+    public function price()
     {
-        return $this->price;
+        return 'standart price';
     }
 }
