@@ -8,10 +8,10 @@ spl_autoload_register(function ($class) {
 
 $taxi = new Econom();
 $car = $taxi->callTaxi();
-print "Your type is : {$car->choose_type()}. Car : {$car->getCar()} . Price : {$car->getPrice()}" . "<br>";
+print "Your type is : {$car->choose_type()}. Car : {$car->carModel()} . Price : {$car->price()}" . "<br>";
 $taxi = new Standart();
 $car = $taxi->callTaxi();
-print "Your type is : {$car->choose_type()}. Car : {$car->getCar()} . Price : {$car->getPrice()}" . "<br>";
+print "Your type is : {$car->choose_type()}. Car : {$car->carModel()} . Price : {$car->price()}" . "<br>";
 $taxi = new Lux();
 $car = $taxi->callTaxi();
-print "Your type is : {$car->choose_type()}. Car : {$car->getCar()} . Price : {$car->getPrice()}";
+print "Your type is : {$car->choose_type()}. Car : {$car->carModel()} . Price : {$car->price()}";
